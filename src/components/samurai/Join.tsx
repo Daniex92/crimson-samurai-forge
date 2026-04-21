@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const ranks = ["Hierro", "Bronce", "Plata", "Oro", "Platino", "Diamante", "Inmortal", "Radiante"];
+const ranks = ["Bronce", "Plata", "Oro", "Platino", "Diamante", "Maestro", "Leyenda"];
+const modes = ["Battle Royale", "Multijugador", "Squad BR", "Sin preferencia"];
+const roles = ["Sniper", "Rusher / Asalto", "Soporte / Médico", "IGL / Estratega", "Flex"];
 
 export function Join() {
   const [submitted, setSubmitted] = useState(false);
@@ -70,18 +72,18 @@ export function Join() {
               </Field>
 
               <div className="grid gap-6 sm:grid-cols-2">
-                <Field label="Juego Principal" name="game">
+                <Field label="Modo Favorito" name="mode">
                   <select
                     required
-                    name="game"
+                    name="mode"
                     className="w-full appearance-none border border-border bg-input/60 px-4 py-3 font-display text-foreground transition-all focus:border-blood focus:outline-none focus:shadow-blood-sm"
                   >
-                    {["Valorant", "CS2", "Apex Legends", "Rainbow Six", "Otro"].map((g) => (
-                      <option key={g}>{g}</option>
+                    {modes.map((m) => (
+                      <option key={m}>{m}</option>
                     ))}
                   </select>
                 </Field>
-                <Field label="Rango Actual" name="rank">
+                <Field label="Rango en Blood Strike" name="rank">
                   <select
                     required
                     name="rank"
@@ -93,6 +95,18 @@ export function Join() {
                   </select>
                 </Field>
               </div>
+
+              <Field label="Rol Preferido" name="role">
+                <select
+                  required
+                  name="role"
+                  className="w-full appearance-none border border-border bg-input/60 px-4 py-3 font-display text-foreground transition-all focus:border-blood focus:outline-none focus:shadow-blood-sm"
+                >
+                  {roles.map((r) => (
+                    <option key={r}>{r}</option>
+                  ))}
+                </select>
+              </Field>
 
               <Field label="Tag de Discord" name="discord">
                 <input

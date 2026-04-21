@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 type Status = "Activo" | "Próximo" | "Finalizado";
 
 const tournaments: { title: string; game: string; date: string; prize: string; status: Status; place?: string }[] = [
-  { title: "Copa Carmesí VII", game: "Valorant", date: "12 May, 2026", prize: "$25,000", status: "Activo" },
-  { title: "Duelo del Shōgun", game: "CS2", date: "03 Jun, 2026", prize: "$40,000", status: "Próximo" },
-  { title: "Bloodmoon Open", game: "Apex Legends", date: "21 Jul, 2026", prize: "$15,000", status: "Próximo" },
-  { title: "Liga Katana de Hierro", game: "Valorant", date: "08 Mar, 2026", prize: "$30,000", status: "Finalizado", place: "1°" },
-  { title: "Invitacional Onryō", game: "Rainbow Six", date: "14 Feb, 2026", prize: "$18,000", status: "Finalizado", place: "2°" },
-  { title: "Copa Kage II", game: "CS2", date: "27 Ene, 2026", prize: "$22,000", status: "Finalizado", place: "1°" },
+  { title: "Copa Carmesí VII", game: "Blood Strike · Battle Royale", date: "12 May, 2026", prize: "$25,000", status: "Activo" },
+  { title: "Duelo del Shōgun", game: "Blood Strike · Multijugador", date: "03 Jun, 2026", prize: "$40,000", status: "Próximo" },
+  { title: "Bloodmoon Open", game: "Blood Strike · Squad BR", date: "21 Jul, 2026", prize: "$15,000", status: "Próximo" },
+  { title: "Liga Katana de Hierro", game: "Blood Strike · Battle Royale", date: "08 Mar, 2026", prize: "$30,000", status: "Finalizado", place: "1°" },
+  { title: "Invitacional Onryō", game: "Blood Strike · Multijugador", date: "14 Feb, 2026", prize: "$18,000", status: "Finalizado", place: "2°" },
+  { title: "Copa Kage II", game: "Blood Strike · Squad BR", date: "27 Ene, 2026", prize: "$22,000", status: "Finalizado", place: "1°" },
 ];
 
 const statusStyle: Record<Status, string> = {
