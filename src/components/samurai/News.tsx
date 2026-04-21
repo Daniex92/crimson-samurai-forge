@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const news = [
-  { date: "Apr 18, 2026", tag: "Victory", title: "SAMURAI-BS claims Iron Katana League crown", body: "Sweeping the finals 3-0 against Reaper Squad, we lifted our 47th major trophy." },
-  { date: "Apr 02, 2026", tag: "Roster", title: "AKARI joins the Brotherhood", desc: "Roster", body: "The legendary precision sniper signs a 2-year deal. The clan welcomes a new blade." },
-  { date: "Mar 25, 2026", tag: "Drop", title: "New oni-themed merch collection live", body: "Limited run of 300. Hooded warriors only — chains and katanas sold separately." },
-  { date: "Mar 11, 2026", tag: "Event", title: "Open Tryouts — Crimson Trial 2026", body: "Apply your blade. Top 8 prospects earn a contract. Trial begins May 1st." },
+  { date: "18 Abr, 2026", tag: "Victoria", title: "SAMURAI-BS conquista la Liga Katana de Hierro", body: "Arrasamos en la final 3-0 contra Reaper Squad y alzamos nuestro 47° trofeo mayor." },
+  { date: "02 Abr, 2026", tag: "Roster", title: "AKARI se une a la Hermandad", body: "La legendaria francotiradora firma un contrato de 2 años. El clan recibe una nueva hoja." },
+  { date: "25 Mar, 2026", tag: "Drop", title: "Nueva colección de merch tema oni disponible", body: "Tirada limitada de 300 piezas. Solo guerreros con capucha — cadenas y katanas se venden aparte." },
+  { date: "11 Mar, 2026", tag: "Evento", title: "Pruebas Abiertas — Trial Carmesí 2026", body: "Demuestra tu hoja. Los 8 mejores prospectos firman contrato. La prueba comienza el 1 de mayo." },
 ];
 
 export function News() {
@@ -13,15 +13,14 @@ export function News() {
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <div className="mb-16 text-center">
           <div className="mb-4 flex items-center justify-center gap-3 font-display text-xs uppercase tracking-[0.4em] text-blood">
-            <span className="h-px w-8 bg-blood" /> 04 — The Scrolls <span className="h-px w-8 bg-blood" />
+            <span className="h-px w-8 bg-blood" /> 04 — Los Pergaminos <span className="h-px w-8 bg-blood" />
           </div>
           <h2 className="font-display text-4xl font-bold uppercase text-foreground sm:text-5xl">
-            News from the <span className="text-blood text-glow-soft">Dojo</span>
+            Noticias del <span className="text-blood text-glow-soft">Dōjō</span>
           </h2>
         </div>
 
         <div className="relative">
-          {/* Vertical timeline line */}
           <div className="absolute left-4 top-0 h-full w-px bg-gradient-to-b from-transparent via-blood/40 to-transparent md:left-1/2" />
 
           <div className="space-y-10">
@@ -36,7 +35,6 @@ export function News() {
                   i % 2 === 1 ? "md:[&>article]:col-start-2" : ""
                 }`}
               >
-                {/* Node */}
                 <div className="absolute left-4 top-3 z-10 h-3 w-3 -translate-x-1/2 rotate-45 border border-blood bg-background shadow-blood-sm md:left-1/2" />
 
                 <article

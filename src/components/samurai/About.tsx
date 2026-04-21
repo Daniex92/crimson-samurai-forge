@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const tenets = [
-  { kanji: "義", word: "Honor", desc: "We answer to the code, not the crowd." },
-  { kanji: "勇", word: "Courage", desc: "Charge the storm. Hesitation is defeat." },
-  { kanji: "忠", word: "Loyalty", desc: "Brotherhood forged in pixel and blood." },
-  { kanji: "克", word: "Discipline", desc: "Train until precision becomes instinct." },
+  { kanji: "義", word: "Honor", desc: "Respondemos al código, no a la multitud." },
+  { kanji: "勇", word: "Coraje", desc: "Carga contra la tormenta. Dudar es perder." },
+  { kanji: "忠", word: "Lealtad", desc: "Hermandad forjada en píxeles y sangre." },
+  { kanji: "克", word: "Disciplina", desc: "Entrenar hasta que la precisión sea instinto." },
 ];
 
 export function About() {
@@ -20,19 +20,20 @@ export function About() {
         >
           <div className="lg:col-span-5">
             <div className="mb-4 flex items-center gap-3 font-display text-xs uppercase tracking-[0.4em] text-blood">
-              <span className="h-px w-8 bg-blood" /> 01 — The Code
+              <span className="h-px w-8 bg-blood" /> 01 — El Código
             </div>
             <h2 className="font-display text-4xl font-bold uppercase leading-tight text-foreground sm:text-5xl">
-              Forged in <span className="text-blood text-glow-soft">shadow.</span><br />
-              Bound by <span className="text-blood text-glow-soft">blood.</span>
+              Forjados en <span className="text-blood text-glow-soft">sombra.</span><br />
+              Unidos por <span className="text-blood text-glow-soft">sangre.</span>
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-              SAMURAI-BS is not a team. It is a brotherhood — a sect of competitive warriors
-              who treat every match as a duel. We do not enter to play. We enter to dominate.
+              SAMURAI-BS no es un equipo. Es una hermandad — una sect­a de guerreros
+              competitivos que tratan cada partida como un duelo. No entramos a jugar.
+              Entramos a dominar.
             </p>
             <div className="mt-10 inline-flex items-center gap-3 border-l-2 border-blood pl-4 py-2">
               <span className="font-brush text-xl text-blood/80">
-                "The way of the warrior is found in death."
+                "El camino del guerrero se encuentra en la muerte."
               </span>
             </div>
             <p className="mt-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">
