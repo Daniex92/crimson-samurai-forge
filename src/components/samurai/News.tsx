@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const news = [
-  { date: "18 Abr, 2026", tag: "Victoria", title: "SAMURAI-BS conquista la Liga Katana de Hierro", body: "Arrasamos en la final 3-0 contra Reaper Squad y alzamos nuestro 47° trofeo mayor." },
-  { date: "02 Abr, 2026", tag: "Roster", title: "AKARI se une a la Hermandad", body: "La legendaria francotiradora firma un contrato de 2 años. El clan recibe una nueva hoja." },
-  { date: "25 Mar, 2026", tag: "Drop", title: "Nueva colección de merch tema oni disponible", body: "Tirada limitada de 300 piezas. Solo guerreros con capucha — cadenas y katanas se venden aparte." },
-  { date: "11 Mar, 2026", tag: "Evento", title: "Pruebas Abiertas — Trial Carmesí 2026", body: "Demuestra tu hoja. Los 8 mejores prospectos firman contrato. La prueba comienza el 1 de mayo." },
+  { date: "18 Abr, 2026", tag: "Victoria", title: "SAMURAI-BS conquista la Liga Katana de Hierro", body: "Arrasamos en la final 3-0 de Blood Strike Battle Royale contra Reaper Squad. 47° trofeo del clan." },
+  { date: "02 Abr, 2026", tag: "Roster", title: "AKARI se une a la Hermandad", body: "La legendaria sniper de Blood Strike firma un contrato de 2 años. El escuadrón gana una nueva hoja." },
+  { date: "25 Mar, 2026", tag: "Update", title: "Nueva temporada de Blood Strike — guía del clan", body: "Loadouts, mapas y rotaciones recomendadas por nuestros IGL para subir de rango más rápido." },
+  { date: "11 Mar, 2026", tag: "Evento", title: "Pruebas Abiertas — Trial Carmesí 2026", body: "Demuestra tu hoja en Blood Strike. Los 8 mejores prospectos firman con el clan. Inicio: 1 de mayo." },
 ];
 
 export function News() {
