@@ -2,12 +2,12 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
 const links = [
-  { label: "Dojo", to: "/" },
-  { label: "Brotherhood", to: "/", hash: "about" },
-  { label: "Warriors", to: "/", hash: "members" },
+  { label: "Dōjō", to: "/", hash: "" },
+  { label: "Hermandad", to: "/", hash: "about" },
+  { label: "Guerreros", to: "/", hash: "members" },
   { label: "Arena", to: "/", hash: "tournaments" },
-  { label: "Scrolls", to: "/", hash: "news" },
-  { label: "Enlist", to: "/", hash: "join" },
+  { label: "Pergaminos", to: "/", hash: "news" },
+  { label: "Alistarse", to: "/", hash: "join" },
 ];
 
 export function Navbar() {
@@ -56,11 +56,11 @@ export function Navbar() {
           href="#join"
           className="hidden md:inline-flex items-center justify-center border border-blood bg-blood/10 px-5 py-2 font-display text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-blood/30 hover:shadow-blood-sm"
         >
-          Enlist
+          Alistarse
         </a>
 
         <button
-          aria-label="Toggle menu"
+          aria-label="Abrir menú"
           onClick={() => setOpen((v) => !v)}
           className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 border border-blood/40 md:hidden"
         >

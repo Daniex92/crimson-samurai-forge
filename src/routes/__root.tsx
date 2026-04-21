@@ -6,16 +6,16 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="font-display text-8xl font-bold text-blood text-glow">404</h1>
-        <h2 className="mt-4 font-display text-xl uppercase tracking-[0.3em] text-foreground">Path Lost in Shadow</h2>
+        <h2 className="mt-4 font-display text-xl uppercase tracking-[0.3em] text-foreground">Sendero Perdido en la Sombra</h2>
         <p className="mt-3 text-sm text-muted-foreground">
-          This route has fallen by the blade.
+          Esta ruta ha caído ante la hoja.
         </p>
         <div className="mt-8">
           <Link
             to="/"
             className="inline-flex items-center justify-center border border-blood/60 bg-blood/10 px-8 py-3 font-display text-sm uppercase tracking-[0.25em] text-foreground shadow-blood-sm transition-all hover:bg-blood/30 hover:shadow-blood"
           >
-            Return to Dojo
+            Volver al Dōjō
           </Link>
         </div>
       </div>
@@ -28,11 +28,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SAMURAI-BS — Honor. Blood. Victory." },
-      { name: "description", content: "SAMURAI-BS — Elite esports clan forged in shadow. Join the brotherhood of competitive gaming warriors." },
+      { title: "SAMURAI-BS — Honor. Sangre. Victoria." },
+      { name: "description", content: "SAMURAI-BS — Clan élite de esports forjado en la sombra. Únete a la hermandad de guerreros competitivos." },
       { name: "author", content: "SAMURAI-BS" },
-      { property: "og:title", content: "SAMURAI-BS — Honor. Blood. Victory." },
-      { property: "og:description", content: "Elite esports clan. Discipline. Domination. Brotherhood." },
+      { property: "og:title", content: "SAMURAI-BS — Honor. Sangre. Victoria." },
+      { property: "og:description", content: "Clan élite de esports. Disciplina. Dominio. Hermandad." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

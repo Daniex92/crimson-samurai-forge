@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const ranks = ["Iron", "Bronze", "Silver", "Gold", "Platinum", "Diamond", "Immortal", "Radiant"];
+const ranks = ["Hierro", "Bronce", "Plata", "Oro", "Platino", "Diamante", "Inmortal", "Radiante"];
 
 export function Join() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
     <section id="join" className="relative overflow-hidden py-32">
-      {/* Section glow */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{ background: "radial-gradient(ellipse at center, oklch(0.55 0.24 25 / 0.12), transparent 60%)" }}
@@ -23,13 +22,13 @@ export function Join() {
           className="text-center"
         >
           <div className="mb-4 flex items-center justify-center gap-3 font-display text-xs uppercase tracking-[0.4em] text-blood">
-            <span className="h-px w-8 bg-blood" /> 05 — Enlist <span className="h-px w-8 bg-blood" />
+            <span className="h-px w-8 bg-blood" /> 05 — Alistarse <span className="h-px w-8 bg-blood" />
           </div>
           <h2 className="font-display text-4xl font-bold uppercase leading-tight text-foreground sm:text-5xl">
-            Take the <span className="text-blood text-glow-soft">Oath.</span>
+            Pronuncia el <span className="text-blood text-glow-soft">Juramento.</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Submit your blade. The council reviews every application. The unworthy are turned away.
+            Presenta tu hoja. El consejo revisa cada solicitud. Los indignos son rechazados.
           </p>
         </motion.div>
 
@@ -44,7 +43,6 @@ export function Join() {
           }}
           className="mt-12 glass-panel relative p-8 sm:p-10"
         >
-          {/* Corner blades */}
           <span className="absolute left-0 top-0 h-4 w-4 border-l-2 border-t-2 border-blood" />
           <span className="absolute right-0 top-0 h-4 w-4 border-r-2 border-t-2 border-blood" />
           <span className="absolute bottom-0 left-0 h-4 w-4 border-b-2 border-l-2 border-blood" />
@@ -54,15 +52,15 @@ export function Join() {
             <div className="py-12 text-center">
               <div className="font-brush text-6xl text-blood text-glow">✦</div>
               <h3 className="mt-4 font-display text-2xl font-bold uppercase tracking-wider text-foreground">
-                Oath Received
+                Juramento Recibido
               </h3>
               <p className="mt-3 text-muted-foreground">
-                The council walks the path. Watch your inbox — judgment comes within 7 days.
+                El consejo recorre el camino. Vigila tu correo — el juicio llega en 7 días.
               </p>
             </div>
           ) : (
             <div className="grid gap-6">
-              <Field label="Warrior Name" name="username">
+              <Field label="Nombre de Guerrero" name="username">
                 <input
                   required
                   name="username"
@@ -72,18 +70,18 @@ export function Join() {
               </Field>
 
               <div className="grid gap-6 sm:grid-cols-2">
-                <Field label="Primary Game" name="game">
+                <Field label="Juego Principal" name="game">
                   <select
                     required
                     name="game"
                     className="w-full appearance-none border border-border bg-input/60 px-4 py-3 font-display text-foreground transition-all focus:border-blood focus:outline-none focus:shadow-blood-sm"
                   >
-                    {["Valorant", "CS2", "Apex Legends", "Rainbow Six", "Other"].map((g) => (
+                    {["Valorant", "CS2", "Apex Legends", "Rainbow Six", "Otro"].map((g) => (
                       <option key={g}>{g}</option>
                     ))}
                   </select>
                 </Field>
-                <Field label="Current Rank" name="rank">
+                <Field label="Rango Actual" name="rank">
                   <select
                     required
                     name="rank"
@@ -96,21 +94,21 @@ export function Join() {
                 </Field>
               </div>
 
-              <Field label="Discord Tag" name="discord">
+              <Field label="Tag de Discord" name="discord">
                 <input
                   required
                   name="discord"
-                  placeholder="warrior#0001"
+                  placeholder="guerrero#0001"
                   className="w-full border border-border bg-input/60 px-4 py-3 font-display text-foreground placeholder:text-muted-foreground/60 transition-all focus:border-blood focus:bg-input focus:outline-none focus:shadow-blood-sm"
                 />
               </Field>
 
-              <Field label="Why do you seek the blade?" name="exp">
+              <Field label="¿Por qué buscas la hoja?" name="exp">
                 <textarea
                   required
                   name="exp"
                   rows={4}
-                  placeholder="Speak of your trials, your victories, your hunger..."
+                  placeholder="Cuenta tus pruebas, tus victorias, tu hambre..."
                   className="w-full resize-none border border-border bg-input/60 px-4 py-3 font-display text-foreground placeholder:text-muted-foreground/60 transition-all focus:border-blood focus:bg-input focus:outline-none focus:shadow-blood-sm"
                 />
               </Field>
@@ -119,7 +117,7 @@ export function Join() {
                 type="submit"
                 className="group relative mt-2 overflow-hidden border border-blood bg-blood/20 px-10 py-4 font-display text-sm uppercase tracking-[0.3em] text-foreground shadow-blood-sm transition-all hover:bg-blood/40 hover:shadow-blood"
               >
-                <span className="relative z-10">Submit the Oath</span>
+                <span className="relative z-10">Pronunciar Juramento</span>
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-blood/40 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
               </button>
             </div>

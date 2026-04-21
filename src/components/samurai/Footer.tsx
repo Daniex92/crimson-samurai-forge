@@ -33,7 +33,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Forged in shadow. Bound by blood. Driven by victory. Walk the path or step aside.
+              Forjados en sombra. Unidos por sangre. Guiados por la victoria. Camina la senda o apártate.
             </p>
             <div className="mt-6 flex gap-3">
               {socials.map((s) => (
@@ -52,10 +52,15 @@ export function Footer() {
           <div className="md:col-span-3">
             <div className="font-display text-xs uppercase tracking-[0.3em] text-blood">Clan</div>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-              {["About", "Warriors", "Tournaments", "News"].map((l) => (
-                <li key={l}>
-                  <a href={`#${l.toLowerCase()}`} className="transition-colors hover:text-blood">
-                    {l}
+              {[
+                { es: "Hermandad", id: "about" },
+                { es: "Guerreros", id: "members" },
+                { es: "Torneos", id: "tournaments" },
+                { es: "Pergaminos", id: "news" },
+              ].map((l) => (
+                <li key={l.id}>
+                  <a href={`#${l.id}`} className="transition-colors hover:text-blood">
+                    {l.es}
                   </a>
                 </li>
               ))}
@@ -63,25 +68,25 @@ export function Footer() {
           </div>
 
           <div className="md:col-span-4">
-            <div className="font-display text-xs uppercase tracking-[0.3em] text-blood">Receive the Scrolls</div>
+            <div className="font-display text-xs uppercase tracking-[0.3em] text-blood">Recibe los Pergaminos</div>
             <p className="mt-4 text-sm text-muted-foreground">
-              Battle reports, drops, and tournament alerts.
+              Reportes de batalla, drops y alertas de torneo.
             </p>
             <form className="mt-4 flex" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
-                placeholder="warrior@dojo.io"
+                placeholder="guerrero@dojo.io"
                 className="w-full border border-border bg-input/60 px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-blood focus:outline-none"
               />
               <button className="border border-l-0 border-blood bg-blood/20 px-4 py-2.5 font-display text-xs uppercase tracking-[0.2em] text-foreground hover:bg-blood/40">
-                Bind
+                Unir
               </button>
             </form>
           </div>
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row">
-          <div>© {new Date().getFullYear()} SAMURAI-BS. All blades sharpened.</div>
+          <div>© {new Date().getFullYear()} SAMURAI-BS. Todas las hojas afiladas.</div>
           <div className="font-display uppercase tracking-[0.3em]">名誉 · 血 · 勝利</div>
         </div>
       </div>
