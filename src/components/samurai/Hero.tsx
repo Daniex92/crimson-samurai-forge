@@ -19,7 +19,7 @@ export function Hero() {
           className="mb-8 flex items-center gap-4 font-display text-xs uppercase tracking-[0.5em] text-blood/80"
         >
           <span className="h-px w-12 bg-blood/50" />
-          <span>武士道 · BUSHIDŌ</span>
+          <span>武士道 · Clan de Blood Strike</span>
           <span className="h-px w-12 bg-blood/50" />
         </motion.div>
 
