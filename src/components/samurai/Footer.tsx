@@ -33,7 +33,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Forged in shadow. Bound by blood. Driven by victory. Walk the path or step aside.
+              Forjados en sombra. Unidos por sangre. Guiados por la victoria. Camina la senda o apártate.
             </p>
             <div className="mt-6 flex gap-3">
               {socials.map((s) => (
