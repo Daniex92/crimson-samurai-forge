@@ -5,10 +5,10 @@ import p3 from "@/assets/player-3.jpg";
 import p4 from "@/assets/player-4.jpg";
 
 const members = [
-  { name: "KUROSAWA", tag: "@kuro_san", role: "Líder del Clan", img: p1, kanji: "頭" },
-  { name: "AKARI", tag: "@akari_98", role: "Francotiradora", img: p2, kanji: "弓" },
-  { name: "YOKAI", tag: "@yokai_x", role: "Asalto", img: p3, kanji: "鬼" },
-  { name: "RAIJIN", tag: "@raijin", role: "Estratega", img: p4, kanji: "雷" },
+  { name: "KUROSAWA", tag: "@kuro_san", role: "IGL · Líder", img: p1, kanji: "頭" },
+  { name: "AKARI", tag: "@akari_98", role: "Sniper · Larga Distancia", img: p2, kanji: "弓" },
+  { name: "YOKAI", tag: "@yokai_x", role: "Rusher · Asalto", img: p3, kanji: "鬼" },
+  { name: "RAIJIN", tag: "@raijin", role: "Soporte · Médico", img: p4, kanji: "雷" },
 ];
 
 export function Members() {

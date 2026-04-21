@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const ranks = ["Hierro", "Bronce", "Plata", "Oro", "Platino", "Diamante", "Inmortal", "Radiante"];
+const ranks = ["Bronce", "Plata", "Oro", "Platino", "Diamante", "Maestro", "Leyenda"];
+const modes = ["Battle Royale", "Multijugador", "Squad BR", "Sin preferencia"];
+const roles = ["Sniper", "Rusher / Asalto", "Soporte / Médico", "IGL / Estratega", "Flex"];
 
 export function Join() {
   const [submitted, setSubmitted] = useState(false);

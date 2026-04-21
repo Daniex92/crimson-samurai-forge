@@ -27,9 +27,9 @@ export function About() {
               Unidos por <span className="text-blood text-glow-soft">sangre.</span>
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-              SAMURAI-BS no es un equipo. Es una hermandad — una sect­a de guerreros
-              competitivos que tratan cada partida como un duelo. No entramos a jugar.
-              Entramos a dominar.
+              SAMURAI-BS es un clan competitivo de <span className="text-blood">Blood Strike</span>.
+              Una hermandad forjada en el campo de batalla, donde cada partida es un duelo y
+              cada caída del enemigo, una victoria grabada en sangre. No entramos a jugar. Entramos a dominar.
             </p>
             <div className="mt-10 inline-flex items-center gap-3 border-l-2 border-blood pl-4 py-2">
               <span className="font-brush text-xl text-blood/80">
